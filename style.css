@@ -1,0 +1,40 @@
+:root {
+  --bg: #050817;
+  --surface: #0a1226;
+  --surface-2: #0e1931;
+  --line: #1d3654;
+  --text: #eef7ff;
+  --muted: #9bb0c7;
+  --cyan: #20e3ff;
+  --lime: #b7ff3c;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: radial-gradient(circle at 50% -20%, #122d50 0, var(--bg) 42%); line-height: 1.7; }
+a { color: var(--cyan); }
+.wrap { width: min(920px, calc(100% - 36px)); margin: 0 auto; }
+.hero { padding: 64px 0 42px; border-bottom: 1px solid var(--line); }
+.eyebrow, .tag { color: var(--cyan); font-size: .75rem; font-weight: 900; letter-spacing: .18em; }
+h1 { max-width: 720px; margin: 10px 0 14px; font-size: clamp(2rem, 7vw, 4.3rem); line-height: 1.03; }
+.lead { max-width: 680px; color: var(--muted); font-size: 1.08rem; }
+nav { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+nav a { padding: 9px 14px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; background: #081123; }
+main { padding: 42px 0 28px; }
+.card { margin-bottom: 24px; padding: clamp(24px, 5vw, 48px); border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(145deg, rgba(14,25,49,.96), rgba(7,14,30,.98)); box-shadow: 0 20px 70px rgba(0,0,0,.2); }
+.card h2 { margin: 4px 0 0; font-size: clamp(1.7rem, 4vw, 2.6rem); line-height: 1.15; }
+.card h3 { margin: 30px 0 8px; color: var(--lime); font-size: 1.02rem; }
+.card p { color: #c6d4e3; }
+.updated, .small { color: var(--muted) !important; font-size: .9rem; }
+.accent-card { border-color: #356145; }
+.contact { padding: 16px; border-radius: 12px; background: #081123; border: 1px dashed var(--lime); }
+.contact span { color: var(--lime); }
+footer { padding: 28px 0 46px; color: #657b94; font-size: .85rem; }
+@media (max-width: 560px) {
+  .hero { padding-top: 42px; }
+  .wrap { width: min(100% - 24px, 920px); }
+  .card { border-radius: 15px; }
+}
